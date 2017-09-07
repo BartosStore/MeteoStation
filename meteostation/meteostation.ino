@@ -7,11 +7,16 @@ LiquidCrystal_I2C lcd(0x27,16,4);  // set the LCD address to 0x27 for a 16 chars
 
 void setup(){
   lcd.init();                      
-  lcd.backlight();      //lcd illumination  
+  lcd.backlight();
   
-  //setCursor(col,row)
-  lcd.setCursor(0,0);   
+  lcd.setCursor(0,0);
   lcd.print("UNO!");
+  
+  lcd.setCursor(5,0);
+  lcd.print("Temp: XX");
+  
+  lcd.setCursor(0,1);
+  lcd.print("Humi: XX");
 }
 
 void loop(){
