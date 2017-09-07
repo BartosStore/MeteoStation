@@ -34,10 +34,10 @@ void setup(){
   lcd.print("UNO!");
   
   lcd.setCursor(5,0);
-  lcd.print("Temp: XX");
+  lcd.print("Temp:" + String(temp));
   
   lcd.setCursor(0,1);
-  lcd.print("Humi: XX");
+  lcd.print("Humi:" + String(humi));
 }
 
 void loop(){
